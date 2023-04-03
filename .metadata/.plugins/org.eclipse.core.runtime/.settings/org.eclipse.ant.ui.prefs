@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+org.eclipse.ant.ui.customtemplates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="org.eclipse.ant.ui.templateContextType.target" deleted\="false" description\="print to standard out" enabled\="true" name\="syso">System.out.println(${word_selection}${});${cursor}}</template></templates>
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
