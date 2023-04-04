@@ -13,5 +13,16 @@ public class _11_Package {
         double min = 5.0;
         double max = 10.0;
         System.out.println("랜덤 실수 (범위) : " + (min + (max - min) * random.nextDouble()));
+
+        System.out.println("랜덤 boolean : " + random.nextBoolean());
+
+        // 로또 번호를 랜덤으로 뽑으려면? 1~45
+        System.out.println("로또 번호 : " + random.nextInt(45) + 1);
+        // nextInt(45) : 0 이상 45 미만의 수
+        // nextInt(45) + 1 : 1 이상 46 미만의 수
+
+        // math, scanner StringBuilder, StringTokenizer
+        // BigInteger, BigDecimal
+        // LocalDate 등등
     }
 }
