@@ -10,5 +10,10 @@ public class _05_MethodOverloading {
         b1.record(true, false, 3);
         System.out.println("--------------");
         b1.record(true, true, 5);
+        System.out.println("---------------------");
+        b1.record();
+
+        //String
+        String s = "Black";
     }
 }
