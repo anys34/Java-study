@@ -49,5 +49,20 @@ public class _02_GenericClass {
 
         CoffeeByUser<User> c8 = new CoffeeByUser<>(new VIPUser("서장훈"));
         c8.ready();
+
+        System.out.println();
+        orderCoffee("김영철");
+        orderCoffee(36);
+
+        orderCoffee("김희철", "아메리카노");
+        orderCoffee(37, "라떼");
+    }
+
+    public static <T> void orderCoffee(T name) {
+        System.out.println("커피 준비 완료 : " + name);
+    }
+
+    public static <T, V> void orderCoffee(T name, V coffee) {
+        System.out.println(coffee + " 준비 완료 : " + name);
     }
 }
