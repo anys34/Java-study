@@ -1,8 +1,8 @@
 package chap_09;
 
-import chap_09.coffee.CoffeeByName;
-import chap_09.coffee.CoffeeByNickname;
-import chap_09.coffee.CoffeeByNumber;
+import chap_09.coffee.*;
+import chap_09.user.User;
+import chap_09.user.VIPUser;
 
 public class _02_GenericClass {
     public static void main(String[] args) {
@@ -30,5 +30,24 @@ public class _02_GenericClass {
         System.out.println("주문 고객 이름 : " + c4Name);
 
         // c4Name = (String) c3.name;
+        System.out.println();
+
+        Coffee<Integer> c5 = new Coffee<>(35);
+        c5.ready();
+        int c5Name = c5.name;
+        System.out.println("주문 고객 번호 : " + c5Name);
+
+        Coffee<String> c6 = new Coffee<>("조세호");
+        c6.ready();
+        String c6Name = c6.name;
+        System.out.println("주문 고객 이름 : " + c6Name);
+
+        System.out.println();
+
+        CoffeeByUser<User> c7 = new CoffeeByUser<>(new User("강호동"));
+        c7.ready();
+
+        CoffeeByUser<User> c8 = new CoffeeByUser<>(new VIPUser("서장훈"));
+        c8.ready();
     }
 }
