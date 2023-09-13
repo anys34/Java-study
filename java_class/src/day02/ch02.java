@@ -1,3 +1,5 @@
+package day02;
+
 public class ch02 {
     static class A {
         boolean a;

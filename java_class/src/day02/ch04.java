@@ -1,3 +1,5 @@
+package day02;
+
 public class ch04 {
     static class A {
         int m1, m2, m3, m4;

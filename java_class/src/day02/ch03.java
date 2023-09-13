@@ -1,3 +1,5 @@
+package day02;
+
 public class ch03 {
     static class A {
         float sum;

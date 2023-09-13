@@ -1,3 +1,5 @@
+package day02;
+
 public class ch05 {
     static class A {
         int m = 3;

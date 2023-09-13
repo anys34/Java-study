@@ -1,3 +1,5 @@
+package day01;
+
 public class ch01 {
     public static void main(String[] args) {
         method1(1, 2);
